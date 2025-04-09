@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+@font-face {
+    font-family: 'customfont';
+    src: url(TiltPrism-Regular-VariableFont_XROT,YROT.ttf)format(truetype);
+}
+
+.font {
+    font-family: 'Mooli', sans-serif;
+    color: #fff;
+}
+
+.header {
+    font-size: 50px;
+    font-family: 'customfont', sans-serif;
+    color: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(315deg, rgba(255, 0, 0, 0.645) 3%, rgba(60,132,206,1) 38%, rgba(136, 0, 255, 0.932) 68%, rgb(208, 37, 220) 88%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: absolute;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    10% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    90% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+.container {
+    max-width: 75vw;
+}
+
+.navb {
+    display: flex;
+    height: 70px;
+    font-family: 'Mooli', sans-serif;
+    color: #fff;
+}
+
+
+.navb li {
+    list-style: none;
+    margin: 0 10px
+}
+
+.topleft {
+    width: 50%;
+    padding: 14px 0px;
+}
+
+.topright {
+    width: 50%;
+    padding: 20px 0px;
+}
+
+.topright .gameimg {
+    width: 20vw;
+    height: 100%;
+}
+
+.section1 {
+    max-height: 100vh;
+}
+
+.section1 h1 {
+    font-size: 2rem;
+}
+
+.section2 h1 {
+    font-size: 2rem;
+}
+
+.box {
+    margin: 12px 22px;
+    min-width: 20vw;
+    border: 2px solid white;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.box ul {
+    list-style-type: none;
+    color: #fff;
+}
+
+.box ul li {
+    margin: 12px 2px;
+}
+
+.section2 p {
+    padding: 0 8vw;
+    text-align: center;
+}
+
+.box h2 {
+
+    padding: 12px 0;
+}
+
+.minimum_vh{
+    min-height: 110vh;
+}
+
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+.my-1{
+    margin-top: 14px;
+    margin-bottom:14px;
+   
+}
+.my-2{
+    margin-top: 24px;
+    margin-bottom:24px;
+}
+.px-2{
+    padding-left:13px ;
+    padding-right: 13px;
+}
+
+.text-blue{
+    color: white;
+}
+
+.btn{
+    padding: 4px 13px;
+    border:2px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+    color:white;
+    background-color: rgb(18, 14, 13);
+}
+.overflow-x-hidden{
+    overflow-x: hidden;
+}
+.text-center{
+    text-align: center;
+}
+.highlighted{
+    font-weight: bolder;
+    font-size: 1.05rem;
+}
+footer{
+    padding: 23px;
+    text-align: center;
+}
+p{
+    color:yellow
+}
+h1{
+    color: white;
+}
+
+
+/* ... Your existing CSS code ... */
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 90vw;
+    }
+
+    .topleft, .topright {
+        width: 100%;
+    }
+
+    .topright .gameimg {
+        width: 100%;
+        height: auto;
+    }
+
+    .minimum_vh {
+        min-height: auto;
+    }
+
+    .px-2 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+/* Additional responsive styles for even smaller screens */
+@media only screen and (max-width: 480px) {
+    .navb {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .topleft, .topright {
+        width: 100%;
+    }
+
+    .topright .gameimg {
+        width: 100%;
+        height: auto;
+    }
+
+    .section1 h1, .section2 h1, .section2 p {
+        padding: 0 5vw;
+    }
+
+    .box {
+        min-width: 80vw;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
